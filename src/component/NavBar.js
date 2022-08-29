@@ -45,42 +45,15 @@ const NavBar = (props) => {
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
-        {/* <Navbar.Collapse className="justify-content-end">
-        <Navbar.Text>
-          <a>
-          admin
-          </a>
-          
-        </Navbar.Text>
-      </Navbar.Collapse> */}
-
         <Navbar.Collapse id="logout-navbar-nav">
           <Nav className="ml-auto">
-            <a className="navbar-right-content">
-              {/* Admin */}
-              Admin
-            </a>
+            <a className="navbar-right-content">Admin</a>
             <a style={{ cursor: 'pointer' }} className="navbar-right-content">
               Log Out
             </a>
           </Nav>
         </Navbar.Collapse>
-        {/* </div> */}
       </Navbar>
-
-      {/* <Navbar id="main-nav">
-<Navbar.Brand href="#home">Navbar with text</Navbar.Brand>
-<Navbar.Toggle />
-<Navbar.Collapse className="justify-content-end">
-  <Navbar.Text>
-    Signed in as: <a href="#login">Mark Otto</a>
-  </Navbar.Text>
-  <Navbar.Text>
-    Signed in as: <a href="#login">Mark Otto</a>
-  </Navbar.Text>
-</Navbar.Collapse>
-
-</Navbar> */}
     </div>
   );
 };

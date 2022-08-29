@@ -32,10 +32,8 @@ const Login = (props) => {
   };
 
   const login = () => {
-    setTimeout(() => {
-      setfstate({ ...fstate, pass: true, loading: false });
-      navigate('/admin');
-    }, 900);
+    setfstate({ ...fstate, pass: true, loading: false });
+    navigate('/admin/role');
   };
 
   return (

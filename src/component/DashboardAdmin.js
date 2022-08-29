@@ -10,6 +10,7 @@ import {
   faDollarSign,
   faTasks,
 } from '@fortawesome/free-solid-svg-icons';
+import { Link, Outlet } from 'react-router-dom';
 
 const DashboardAdmin = () => {
   const [dState, setdState] = useState({
@@ -42,30 +43,40 @@ const DashboardAdmin = () => {
           </div>
           <ul className="navbar-ul">
             <li>
-              <FontAwesomeIcon icon={faUsers} className="sidebar-icon" />
-              Role
+              <Link to="role">
+                <FontAwesomeIcon icon={faUsers} className="sidebar-icon" />
+                Role
+              </Link>
             </li>
             <li>
-              <FontAwesomeIcon icon={faChair} className="sidebar-icon" />
-              Position
+              <Link to="position">
+                <FontAwesomeIcon icon={faChair} className="sidebar-icon" />
+                Position
+              </Link>
             </li>
             <li>
-              <FontAwesomeIcon icon={faBuilding} className="sidebar-icon" />
-              Department
+              <Link to="department">
+                <FontAwesomeIcon icon={faBuilding} className="sidebar-icon" />
+                Department
+              </Link>
             </li>
             <li>
-              <FontAwesomeIcon icon={faDollarSign} className="sidebar-icon" />
-              Project Bidding
+              <Link to="project-bid">
+                <FontAwesomeIcon icon={faDollarSign} className="sidebar-icon" />
+                Project Bidding
+              </Link>
             </li>
             <li>
-              <FontAwesomeIcon icon={faTasks} className="sidebar-icon" />
-              Portal Master
+              <Link to="portal-master">
+                <FontAwesomeIcon icon={faTasks} className="sidebar-icon" />
+                Portal Master
+              </Link>
             </li>
           </ul>
         </div>
         <div id="main-area">
           <div id="sidebar-top-content" />
-          Main Area
+          <Outlet />
         </div>
       </div>
     </div>

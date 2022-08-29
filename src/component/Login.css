@@ -53,7 +53,7 @@ body {
   width: 90%;
   margin: 0 auto;
 }
-.login-form-input[type="submit"] {
+.login-form-input[type='submit'] {
   background-color: #395faf;
   border-width: 0px;
   margin-top: 15px;
